@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+    <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+    <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#222222">
+
+    <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/" >
+    -->
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <!--
+    <meta name="mobile-web-app-capable" content="yes">
+    -->
+
+    <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+    <!--
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    -->
+
+    <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+    <!--
+    <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+    -->
+
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        /*Intro*/
+
+        html,
+        body,
+        .view {
+            height: 100%;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .view {
+            background: url("http://mdbootstrap.com/images/regular/people/img%20(61).jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        @media (max-width: 768px) {
+            .full-bg-img,
+            .view {
+                height: auto;
+                position: relative;
+            }
+        }
+
+        .description {
+            padding-top: 25%;
+            padding-bottom: 3rem;
+            color: #fff
+        }
+
+        @media (max-width: 992px) {
+            .description {
+                padding-top: 7rem;
+                text-align: center;
+            }
+        }
+    </style>
+
+
+
+</head>
+<body class="fixed-sn red-skin">
+
+
+<!--Double Navigation-->
+<header>
+
+    <!-- Sidebar navigation -->
+    <ul id="slide-out" class="side-nav fixed custom-scrollbar">
+
+        <!-- Logo -->
+        <li>
+            <div class="logo-wrapper sn-ad-avatar-wrapper">
+                <img src="../img/default_user_img.jpg" class="img-fluid img-circle">
+                <div class="rgba-stylish-strong">
+                    <p class="user white-text"><br> <br>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <!--/. Logo -->
+
+        <!-- Side navigation links -->
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="login.html" class="waves-effect">Log In</a>
+                            </li>
+                            <li><a href="register.html" class="waves-effect">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <!--/. Side navigation links -->
+
+    </ul>
+    <!--/. Sidebar navigation -->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
+
+        <!-- SideNav slide-out button -->
+        <div class="pull-left">
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn">
+            <p>Register</p>
+        </div>
+
+
+        <ul class="nav navbar-nav pull-right">
+
+            <li class="nav-item ">
+                <a href="index.html" class="nav-link"><i class="fa fa-home"></i> <span class="">Home</span></a>
+            </li>
+
+            <li class="nav-item ">
+                <a href="login.html" class="nav-link"><i class="fa fa-user"></i> <span class="">Log In</span></a>
+            </li>
+        </ul>
+
+    </nav>
+    <!--/.Navbar-->
+
+</header>
+<!--/Double Navigation-->
+
+<!--Main layout-->
+        <!--Mask-->
+        <div class="view hm-black-strong">
+            <div class="full-bg-img flex-center">
+                <div class="container">
+                    <div class="row" id="home">
+
+                        <!--First column-->
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <h2 class="h2-responsive wow fadeInLeft">Register Now! </h2>
+                                <hr class="hr-dark wow fadeInLeft">
+                                <p class="wow fadeInRight" data-wow-delay="0.4s">Register now to start using the Summit Service App!</p>
+                                <p class="wow fadeInLeft" data-wow-delay="0.7s">You need to register using the username given to you by the app admin and the email address you gave to the app admin</p>
+                                <p class="wow fadeInRight" data-wow-delay="1.0s">Please see the app admin for your registering credentials or for any registering problems.</p>
+
+                            </div>
+                        </div>
+                        <!--/.First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-6">
+                            <!--Form-->
+                            <div class="card wow fadeInLeft">
+                                <div class="card-block">
+                                    <!--Header-->
+                                    <div class="text-xs-center">
+                                        <h3><i class="fa fa-user"></i> Register:</h3>
+                                        <hr>
+                                    </div>
+
+                                    <!--Body-->
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix"></i>
+                                        <input type="text" id="username" name="username" class="form-control">
+                                        <label for="username">Your username</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fa fa-envelope prefix"></i>
+                                        <input type="email" id="email" name="email" class="form-control">
+                                        <label for="email">Your email</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="password" name="password" class="form-control">
+                                        <label for="password">Your password</label>
+                                    </div>
+
+                                    <div class="md-form">
+                                        <i class="fa fa-lock prefix"></i>
+                                        <input type="password" id="password_confirm" name="password_confirm" class="form-control">
+                                        <label for="password_confirm">Confirm password</label>
+                                    </div>
+
+                                    <div class="text-xs-center">
+                                        <button class="btn btn-ins btn-lg">Register</button>
+                                        <hr>
+                                        <p>Already registered? Then <a href="login.html">Log In</a> !</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--/.Form-->
+                        </div>
+                        <!--/Second column-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.Mask-->
+
+
+
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-3 col-md-offset-1">
+                <h5 class="title">Footer Content</h5>
+                <p>Here you can use rows and columns here to organize your footer content.</p>
+            </div>
+            <!--/.First column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Second column-->
+            <div class="col-md-2 col-md-offset-1">
+                <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Third column-->
+            <div class="col-md-2">
+                <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Fourth column-->
+            <div class="col-md-2">
+                <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+    <!--Call to action-->
+    <div class="call-to-action">
+        <ul>
+            <li>
+                <h5>Register</h5>
+            </li>
+            <li><a href="register.html" class="btn btn-danger">Begin</a></li>
+        </ul>
+    </div>
+    <!--/.Call to action-->
+
+    <hr>
+
+    <!--Social buttons-->
+    <div class="social-section">
+        <ul>
+            <li><a class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"> </i></a></li>
+
+        </ul>
+    </div>
+    <!--/.Social buttons-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2015 Copyright: <a href="http://www.adampdoyle.com" target="_blank"> Doyleware|Designs </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<script src="../js/vendor/modernizr-2.7.1.min.js"></script>
+
+<script src="../js/vendor/jquery-2.2.3.min.js"></script>
+
+<script src="../js/mdb.min.js"></script>
+<script src="../js/helper.js"></script>
+<script src="../js/tether.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+
+
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
+</html>
