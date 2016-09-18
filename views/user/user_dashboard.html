@@ -62,9 +62,9 @@
         <!-- Logo -->
         <li>
             <div class="logo-wrapper sn-ad-avatar-wrapper">
-                <img src="http://mdbootstrap.com/images/avatars/img%20(6)" class="img-fluid img-circle">
+                <img src="../../img/user_img.jpg" class="img-fluid img-circle">
                 <div class="rgba-stylish-strong">
-                    <p class="user white-text">Admin<br> admin@gmail.com
+                    <p class="user white-text">Adam<br> dominofoe@yahoo.com
                     </p>
                 </div>
             </div>
@@ -74,27 +74,30 @@
         <!-- Side navigation links -->
         <li>
             <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-calendar"></i> Today<i class="fa fa-angle-down rotate-icon"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="user_dashboard.html" class="waves-effect">View Route</a>
+                            </li>
+                            <li><a href="#" class="waves-effect">Add Stop</a>
+                            </li>
+                            <li><a href="#" class="waves-effect">Remove Stop</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> Account<i class="fa fa-angle-down rotate-icon"></i></a>
                     <div class="collapsible-body">
                         <ul>
-                            <li><a href="#" class="waves-effect">Log In</a>
+                            <li><a href="#" class="waves-effect">Settings</a>
                             </li>
-                            <li><a href="#" class="waves-effect">Register</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-paint-brush"></i> Plugins<i class="fa fa-angle-down rotate-icon"></i></a>
-                    <div class="collapsible-body">
-                        <ul>
-                            <li><a href="#" class="waves-effect">Installed plugins</a>
-                            </li>
-                            <li><a href="#" class="waves-effect">Add new</a>
+                            <li><a href="#" class="waves-effect">Log Out</a>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> Users<i class="fa fa-angle-down rotate-icon"></i></a>
+
+               <!--  <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-user"></i> Users<i class="fa fa-angle-down rotate-icon"></i></a>
                     <div class="collapsible-body">
                         <ul>
                             <li><a href="#" class="waves-effect">All users</a>
@@ -142,6 +145,7 @@
     <!--/. Sidebar navigation -->
 
     <!--Navbar-->
+
     <nav class="navbar navbar-fixed-top scrolling-navbar double-nav">
 
         <!-- SideNav slide-out button -->
@@ -151,15 +155,21 @@
 
         <!-- Breadcrumb-->
         <div class="breadcrumb-dn">
-            <p>Summit Service</p>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
         </div>
 
 
         <ul class="nav navbar-nav pull-right">
 
             <li class="nav-item ">
-                <a class="nav-link"><i class="fa fa-user"></i> <span class="">Log In</span></a>
+                <a href="user_dashboard.html" class="nav-link"><i class="fa fa-truck"></i> Today</span></a>
             </li>
+            <li class="nav-item ">
+                <a class="nav-link"><i class="fa fa-user"></i> Log Out<span class=""></span></a>
+            </li>
+
             <!--
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile</a>
@@ -178,19 +188,147 @@
 <!--/Double Navigation-->
 
 <!--Main layout-->
-<main class="">
-    <div class="container-fluid text-xs-center">
 
-        <div class="intro text-xs-center">
-            <p>Welcome to the</p>
-            <h1>Summit Service App</h1>
-            <p>This is the User Dashboard</p>
+<div class="my-container">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tabs-3 red-gradient" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#panel-route" role="tab"><i class="fa fa-truck"></i><br>Route</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel-stock" role="tab"><i class="fa fa-camera"></i><br>Stock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#panel-sales" role="tab"><i class="fa fa-shopping-cart"></i><br>Sales</a>
+            </li>
+        </ul>
+
+        <div class="page-actions">
+            <div class="pull-xs-left">
+                <button class="btn btn-primary btn-sm waves-effect arrow-r"><i class="fa fa-angle-down rotate-icon"></i></button> Hide Completed
+            </div>
+            <div class="pull-xs-right">
+                <button class="btn btn-primary btn-sm waves-effect"><i class="fa fa-plus"></i> Stop</button>
+            </div>
         </div>
 
 
+        <!-- Tab panels -->
+        <div class="tab-content">
 
+            <!--Panel 1-->
+            <div class="tab-pane fade in active" id="panel-route" role="tabpanel">
+
+
+                <table class="table table-bordered text-xs-center">
+                    <thead class="thead-inverse">
+                    <tr>
+                        <th>#</th>
+                        <th><i class="fa fa-recycle"></i></th>
+                        <th>Type</th>
+                        <th>Customer</th>
+                        <th style="width:130px;">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-success">
+                        <th scope="row">1</th>
+                        <td><i class="fa fa-recycle"></i></td>
+                        <td>FULL</td>
+                        <td>Billy's Sports Bar</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-success">
+                        <th scope="row">2</th>
+                        <td></td>
+                        <td>PM</td>
+                        <td>Belmont Hall</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <th scope="row">3</th>
+                        <td><i class="fa fa-recycle"></i></td>
+                        <td>FULL</td>
+                        <td>Buckley's Great Steaks</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td>ESVC</td>
+                        <td>Alans of Boscawen</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td></td>
+                        <td>FULL</td>
+                        <td>Giorgio's Milford</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td></td>
+                        <td>DEL</td>
+                        <td>Thirsty Moose</td>
+                        <td>
+                            <a class="blue-text"><i class="fa fa-eye"></i></a>
+                            <a class="teal-text"><i class="fa fa-camera"></i></a>
+                            <a class="red-text"><i class="fa fa-shopping-cart"></i></a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <!--/.Panel 1-->
+
+            <!--Panel 2-->
+            <div class="tab-pane fade" id="panel-stock" role="tabpanel">
+                <br>
+
+
+            </div>
+            <!--/.Panel 2-->
+
+            <!--Panel 3-->
+            <div class="tab-pane fade" id="panel-sales" role="tabpanel">
+                <br>
+
+                <p>Consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+
+            </div>
+            <!--/.Panel 3-->
+
+        </div>
     </div>
-</main>
+
+
+
+
+
 <!--/Main layout-->
 
 <!--Footer-->

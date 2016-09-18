@@ -1,4 +1,40 @@
 /* YOUR CUSTOM STYLES */
+
+html {
+    width: 100%;
+}
+
 body {
     background-color: #f4f4f4;
+    padding-top: 2.8rem;
+    width: 100%;
+}
+
+th {
+    text-align: center;
+}
+
+.my-container {
+    width: 100%;
+}
+
+.navbar {
+    padding: .5rem;
+}
+
+.tab-content {
+    padding: .5rem 0 0 0;
+
+}
+
+.nav-tabs {
+    margin: 0 0 0 0;
+}
+
+.page-actions {
+    width: 100%;
+}
+
+.table {
+    width: 100% !important;
 }
