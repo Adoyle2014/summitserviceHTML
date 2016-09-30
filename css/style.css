@@ -44,3 +44,8 @@ th {
     width: 80%;
     margin: 0 auto;
 }
+
+.table > tbody > tr > td > input {
+    height: 1.3rem;
+}
+
