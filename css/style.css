@@ -49,3 +49,6 @@ th {
     height: 1.3rem;
 }
 
+td > .btn {
+    margin: 0;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 <head>
     <meta charset="utf-8">
     <title></title>
@@ -191,20 +191,30 @@
 
 <div class="my-container">
 
-    <!-- page-title -->
+    <!--------------------------------------------------------------------------
+                         Page Title
+    ---------------------------------------------------------------------------->
+
     <h3 class="red-gradient text-xs-center white-text page-title">
         Billy's Sports Bar
     </h3>
 
+    <!--------------------------------------------------------------------------
+                     Page Actions
+---------------------------------------------------------------------------->
+
     <div class="row page-actions">
-        <div class="col-xs-4 text-xs-center">
-            <a href="#" class="btn btn-primary btn-sm waves-effect active">Equipment</a>
+        <div class="col-xs-3 text-xs-center">
+            <a href="#" class="btn btn-primary btn-sm waves-effect z-depth-2 active">Equipment</a>
         </div>
-        <div class="col-xs-4 text-xs-center">
-            <a href="#" class="btn btn-primary btn-sm waves-effect">Product</a>
+        <div class="col-xs-3 text-xs-center">
+            <a href="#" class="btn btn-primary btn-sm waves-effect z-depth-2">Product</a>
         </div>
-        <div class="col-xs-4 text-xs-center">
-            <a href="#" class="btn btn-primary btn-sm waves-effect">Account</a>
+        <div class="col-xs-3 text-xs-center">
+            <a href="#" class="btn btn-primary btn-sm waves-effect z-depth-2">Repairs</a>
+        </div>
+        <div class="col-xs-3 text-xs-center">
+            <a href="#" class="btn btn-primary btn-sm waves-effect z-depth-2">Account</a>
         </div>
     </div>
 
@@ -214,11 +224,12 @@
         <table class="table table-bordered table-hover text-xs-center">
             <thead class="thead-inverse">
             <tr>
-                <th>#</th>
-                <th>Type</th>
-                <th>Make</th>
-                <th>Model</th>
-                <th>Location</th>
+                <th width="5%">#</th>
+                <th width="10%">Type</th>
+                <th width="25%">Make</th>
+                <th width="25%">Model</th>
+                <th width="25%">Location</th>
+                <th width="10%">Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -228,6 +239,9 @@
                 <td>Hobart</td>
                 <td>AM14</td>
                 <td>Kitchen</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             <tr class="clickable-row" data-href="#">
                 <th scope="row">2</th>
@@ -235,6 +249,9 @@
                 <td>Hatco</td>
                 <td>C-15</td>
                 <td>Kitchen</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             <tr class="clickable-row" data-href="#">
                 <th scope="row">3</th>
@@ -242,6 +259,9 @@
                 <td>ADS</td>
                 <td>ET-AF</td>
                 <td>Inside Bar Left</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             <tr class="clickable-row" data-href="#">
                 <th scope="row">4</th>
@@ -249,6 +269,9 @@
                 <td>ADS</td>
                 <td>ET-AF</td>
                 <td>Inside Bar right</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
 
             <tr class="clickable-row" data-href="#">
@@ -257,6 +280,9 @@
                 <td>Dema</td>
                 <td>Big 5</td>
                 <td>Closet</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             <tr class="clickable-row" data-href="#">
                 <th scope="row">6</th>
@@ -264,6 +290,9 @@
                 <td>Dema</td>
                 <td>3-Bay</td>
                 <td>Kitchen</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             <tr class="clickable-row" data-href="#">
                 <th scope="row">7</th>
@@ -271,6 +300,9 @@
                 <td>Dema</td>
                 <td>Prsk</td>
                 <td>Kitchen</td>
+                <td>
+                    <a href="#repair" class="btn btn-sm btn-primary waves-effect z-depth-2"><span class="fa fa-wrench"></span></a>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -330,6 +362,52 @@
                     <input type="text">
                 </td>
             </tr>
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <!--------------------------------------------------------------------------
+                     Repairs
+---------------------------------------------------------------------------->
+
+    <table class="table table-bordered table-hover text-xs-center">
+        <thead class="thead-inverse">
+        <tr>
+            <th width="5%">#</th>
+            <th width="10%">Date</th>
+            <th width="10%">Part #</th>
+            <th width="30%">Part</th>
+            <th width="10%">Cycle #</th>
+            <th width="35%">Notes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>08/29/16</td>
+            <td>8214</td>
+            <td>Peristolic Chemical Tube </td>
+            <td>325418</td>
+            <td>Sanitizer</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>06/19/16</td>
+            <td>8214</td>
+            <td>Peristolic Chemical Tube </td>
+            <td>31258</td>
+            <td>Rinse Aid</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>05/13/16</td>
+            <td>8214</td>
+            <td>Peristolic Chemical Tube </td>
+            <td>312395</td>
+            <td>Detergent</td>
+        </tr>
 
         </tbody>
     </table>
